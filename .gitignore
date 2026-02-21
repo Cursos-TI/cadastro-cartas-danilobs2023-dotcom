@@ -1,0 +1,16 @@
+# Compiled binaries
+CartasSuperTrunfo
+CartasSuperTrunfo_test
+CartasSuperTrunfo_Novato
+CartasSuperTrunfo_Aventureiro
+CartasSuperTrunfo_Mestre
+
+# Object files
+*.o
+*.out
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+.DS_Store

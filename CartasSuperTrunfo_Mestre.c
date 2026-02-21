@@ -1,5 +1,18 @@
 #include <stdio.h>
 
+// Constante para conversão de bilhões para unidades base
+#define BILHAO 1000000000.0
+
+// ===============================================
+// NÍVEL MESTRE - Super Trunfo
+// ===============================================
+// Objetivo: Cadastrar DUAS cartas e comparar suas propriedades
+// Propriedades básicas: População, Área, PIB, Pontos Turísticos
+// Propriedades calculadas: Densidade Populacional, PIB per Capita, Super Poder
+// Comparação: Usa operadores relacionais para determinar a carta vencedora
+// Regra especial: Para Densidade Populacional, MENOR valor vence
+// ===============================================
+
 int main() {
 
     // ===== CARTA 1 =====
@@ -77,10 +90,14 @@ int main() {
     densidade2 = (float) populacao2 / area2;
 
     // PIB per capita
-    pibPerCapita1 = pib1 / (float) populacao1;
-    pibPerCapita2 = pib2 / (float) populacao2;
+    // Convertemos bilhões para unidades base para obter valor em unidades monetárias por habitante
+    pibPerCapita1 = (pib1 * BILHAO) / (float) populacao1;
+    pibPerCapita2 = (pib2 * BILHAO) / (float) populacao2;
 
-    // Super Poder
+    // Super Poder: Soma de todas as propriedades (quanto maior, melhor)
+    // Nota: Este cálculo é simplificado para fins educacionais e combina valores
+    // de diferentes magnitudes sem normalização. O inverso da densidade é usado
+    // porque densidade menor é considerada melhor (mais espaço por pessoa).
     superPoder1 = (float)populacao1 +
                   area1 +
                   pib1 +
