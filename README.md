@@ -6,10 +6,20 @@ A empresa MateCheck contratou você para desenvolver a parte inicial do jogo, qu
 
 O desafio está dividido em três níveis: Novato, Aventureiro e Mestre, com cada nível adicionando mais complexidade ao anterior. Você deve escolher qual desafio quer realizar.
 
+## 📂 Arquivos das Atividades
+
+Cada nível possui seu próprio arquivo de código:
+
+- **`CartasSuperTrunfo_Novato.c`** - Implementação do Nível Novato
+- **`CartasSuperTrunfo_Aventureiro.c`** - Implementação do Nível Aventureiro  
+- **`CartasSuperTrunfo_Mestre.c`** - Implementação do Nível Mestre
+
 ### 🚨 Atenção: 
 O nível Novato do desafio é focado apenas no cadastro das cartas, utilizando as funções scanf para ler os dados e printf para exibi-los.
 
 ## 🎮 Nível Novato
+
+📄 **Arquivo:** `CartasSuperTrunfo_Novato.c`
 
 No nível Novato, você iniciará criando o sistema básico do jogo Super Trunfo com o tema "Países". As cartas serão divididas por estados, cada um com quatro cidades. 
 
@@ -34,6 +44,8 @@ Cada país será dividido em oito estados, identificados pelas letras de A a H. 
 
 ## 🛡️ Nível Aventureiro
 
+📄 **Arquivo:** `CartasSuperTrunfo_Aventureiro.c`
+
 No nível Aventureiro, você expandirá o sistema para incluir propriedades calculadas, permitindo uma análise mais detalhada das cartas.
 
 ### 🆕 Diferença em relação ao Nível Novato:
@@ -53,6 +65,8 @@ No nível Aventureiro, você expandirá o sistema para incluir propriedades calc
 
 ## 🏆 Nível Mestre
 
+📄 **Arquivo:** `CartasSuperTrunfo_Mestre.c`
+
 No nível Mestre, você implementará comparações entre as cartas, utilizando operadores relacionais e manipulando grandes números com precisão.
 
 ### 🆕 Diferença em relação ao Nível Aventureiro:
@@ -70,6 +84,30 @@ No nível Mestre, você implementará comparações entre as cartas, utilizando 
 ### 📥 Entrada e 📤 Saída de Dados:
 - O usuário insere as cartas a serem comparadas.
 - O sistema exibe os resultados das comparações, indicando a carta vencedora para cada propriedade.
+
+---
+
+## 💻 Como Compilar e Executar
+
+Para compilar e executar cada nível, use os seguintes comandos no terminal:
+
+### Nível Novato
+```bash
+gcc CartasSuperTrunfo_Novato.c -o CartasSuperTrunfo_Novato
+./CartasSuperTrunfo_Novato
+```
+
+### Nível Aventureiro
+```bash
+gcc CartasSuperTrunfo_Aventureiro.c -o CartasSuperTrunfo_Aventureiro
+./CartasSuperTrunfo_Aventureiro
+```
+
+### Nível Mestre
+```bash
+gcc CartasSuperTrunfo_Mestre.c -o CartasSuperTrunfo_Mestre
+./CartasSuperTrunfo_Mestre
+```
 
 ---
 
