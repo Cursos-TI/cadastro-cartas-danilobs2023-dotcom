@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+// Constante para conversão de bilhões para unidades base
+#define BILHAO 1000000000.0
+
 // ===============================================
 // NÍVEL AVENTUREIRO - Super Trunfo
 // ===============================================
@@ -54,7 +57,7 @@ int main() {
     
     // PIB per Capita = (PIB em bilhões * 1 bilhão) / População
     // Convertemos bilhões para unidades base para obter valor em unidades monetárias por habitante
-    pibPerCapita = (pib * 1000000000.0) / (float) populacao;
+    pibPerCapita = (pib * BILHAO) / (float) populacao;
 
     // =============================
     // EXIBIÇÃO DOS DADOS
