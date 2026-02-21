@@ -52,8 +52,9 @@ int main() {
     // Densidade Populacional = População / Área
     densidadePopulacional = (float) populacao / area;
     
-    // PIB per Capita = PIB / População
-    pibPerCapita = pib / (float) populacao;
+    // PIB per Capita = (PIB em bilhões * 1 bilhão) / População
+    // Convertemos bilhões para unidades base para obter valor em unidades monetárias por habitante
+    pibPerCapita = (pib * 1000000000.0) / (float) populacao;
 
     // =============================
     // EXIBIÇÃO DOS DADOS
@@ -70,7 +71,7 @@ int main() {
     // Propriedades calculadas
     printf("\n=== Propriedades Calculadas ===\n");
     printf("Densidade Populacional: %.2f habitantes/km2\n", densidadePopulacional);
-    printf("PIB per Capita: %.6f bilhoes por habitante\n", pibPerCapita);
+    printf("PIB per Capita: %.2f\n", pibPerCapita);
 
     return 0;
 }

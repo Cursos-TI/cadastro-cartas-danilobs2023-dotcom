@@ -111,7 +111,7 @@ gcc CartasSuperTrunfo_Mestre.c -o CartasSuperTrunfo_Mestre
 
 ---
 
-Ao concluir todos os níveis, você terá criado um sistema incial para o jogo Super Trunfo, com funcionalidades de cadastro, cálculo e comparação de propriedades. 
+Ao concluir todos os níveis, você terá criado um sistema inicial para o jogo Super Trunfo, com funcionalidades de cadastro, cálculo e comparação de propriedades. 
 
 Boa sorte e divirta-se programando!
 
