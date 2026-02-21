@@ -96,6 +96,35 @@ int main() {
                   (1.0 / densidade2);
 
     // =============================
+    // EXIBIÇÃO DOS DADOS
+    // =============================
+    printf("\n=============================\n");
+    printf("DADOS DAS CARTAS CADASTRADAS\n");
+    printf("=============================\n\n");
+
+    printf("=== Carta 1 ===\n");
+    printf("Estado: %s\n", estado1);
+    printf("Codigo: %s\n", codigo1);
+    printf("Nome da Cidade: %s\n", nome1);
+    printf("Populacao: %lu\n", populacao1);
+    printf("Area: %.2f km2\n", area1);
+    printf("PIB: %.2f bilhoes\n", pib1);
+    printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f habitantes/km2\n", densidade1);
+    printf("PIB per Capita: %.6f bilhoes por habitante\n", pibPerCapita1);
+
+    printf("\n=== Carta 2 ===\n");
+    printf("Estado: %s\n", estado2);
+    printf("Codigo: %s\n", codigo2);
+    printf("Nome da Cidade: %s\n", nome2);
+    printf("Populacao: %lu\n", populacao2);
+    printf("Area: %.2f km2\n", area2);
+    printf("PIB: %.2f bilhoes\n", pib2);
+    printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f habitantes/km2\n", densidade2);
+    printf("PIB per Capita: %.6f bilhoes por habitante\n", pibPerCapita2);
+
+    // =============================
     // COMPARAÇÕES
     // =============================
     int compPopulacao = populacao1 > populacao2;
