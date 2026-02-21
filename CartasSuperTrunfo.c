@@ -111,7 +111,7 @@ int main() {
     printf("PIB: %.2f bilhoes\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
     printf("Densidade Populacional: %.2f habitantes/km2\n", densidade1);
-    printf("PIB per Capita: %.6f bilhoes por habitante\n", pibPerCapita1);
+    printf("PIB per Capita: %.2f reais por habitante\n", pibPerCapita1 * 1000000000);
 
     printf("\n=== Carta 2 ===\n");
     printf("Estado: %s\n", estado2);
@@ -122,7 +122,7 @@ int main() {
     printf("PIB: %.2f bilhoes\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f habitantes/km2\n", densidade2);
-    printf("PIB per Capita: %.6f bilhoes por habitante\n", pibPerCapita2);
+    printf("PIB per Capita: %.2f reais por habitante\n", pibPerCapita2 * 1000000000);
 
     // =============================
     // COMPARAÇÕES
